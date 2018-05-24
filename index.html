@@ -11,6 +11,47 @@
     <title>Document</title>
 </head>
 <body>
-    
-</body>
+        <div class="container"><!--Div que conté el formulari-->
+                <form method="post" id="formtraballador"><!--Formulari identat per al seu posterior ús al codi js (nom="NOM")-->
+                    <div class="form-group">
+                        <label for="NOM">NOM:</label>
+                        <input type="text" class="form-control" id="NOM" placeholder="Introdueix Nom" name="NOM" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="LLINATGES">LLINATGES:</label>
+                        <input type="text" class="form-control" id="LLINATGES" placeholder="Introdueix Llinatges" name="LLINATGES" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="PASSWORD">PASSWORD:</label>
+                        <input type="password" class="form-control" id="PASSWORD" placeholder="Introdueix Password" name="PASSWORD" min="10" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="DATNAIXAMENT">DATA NAIXEMENT:</label>
+                        <input type="date" class="form-control" id="DATNAIXEMENT" placeholder="Introdueix Data Naixament" name="DATNAIXEMENT" min="18" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="SALBRUT">SALARI BRUT:</label>
+                        <input type="number" class="form-control" id="SALBRUT" placeholder="Introdueix Salari Brut" name="nota" min="500" max="3000" required>
+                    </div>
+                    <div class="form-group">
+                            <label for="IRPF">IRPF:</label>
+                            <input type="number" class="form-control" id="IRPF" placeholder="Introdueix IRPF" name="nota" min="0" max="100" required>
+                        </div>
+                    <button type="button" id="btnsubmit" class="btn btn-default" onclick="return filanova()">Submit</button>
+                </form>
+                <table class="table" id="taula">
+                    <div class="row">
+                        <br>
+                        <h1>Traballadors</h1>
+                        <thead>
+                            <tr><!--Capçalera de la taula dels traballadors-->
+                                <th>Nom</th>
+                                <th>Llinatges</th>
+                                <th>Edat</th>
+                                <th>Salari Net</th>
+                            </tr>
+                        </thead>
+                    </div>
+            </div>     
+        </body>
 </html>
