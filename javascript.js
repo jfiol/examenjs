@@ -12,7 +12,7 @@ function filanova() {//Funció per introduir files a l'índex
     $("#formtraballador")[0].reset()
 }
 
-function salarinet() {//Funció par calcular el salari net amb la fórmula-->salari brut-(salari brut+(IRPF/100))
+function salarinet(salbrut) {//Funció par calcular el salari net amb la fórmula-->salari brut-(salari brut+(IRPF/100))
     salarinet=$("#SALBRUT").val()-($("#SALBRUT").val()*($("#IRPF").val()/100))
     console.log (salarinet);
     return salarinet;
